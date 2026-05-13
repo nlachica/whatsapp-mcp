@@ -1,3 +1,12 @@
 *.db
 claude_desktop_config.json
 whatsapp.log
+
+# Local linked-device session + plaintext message mirror — NEVER commit.
+# `*.db` above already catches messages.db and whatsapp.db, but block the whole
+# store/ directory as belt-and-suspenders so any future sidecar files
+# (snapshots, journal artifacts, cached media) are also covered.
+whatsapp-bridge/store/
+
+# Any stray log file anywhere in the tree.
+*.log
