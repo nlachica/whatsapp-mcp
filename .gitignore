@@ -10,3 +10,4 @@ whatsapp-bridge/store/
 
 # Any stray log file anywhere in the tree.
 *.log
+whatsapp-bridge/whatsapp-bridge
